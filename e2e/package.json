@@ -1,0 +1,17 @@
+{
+    "name": "e2e",
+    "type": "module",
+    "scripts": {
+      "test": "NODE_OPTIONS=\"--experimental-vm-modules --no-warnings\" jest",
+      "test:flashcardspage": "npm run test -- flashcards.test.js",
+      "test:tab": "npm run test -- flashcards.test.js --testNamePattern='Tab Switching Check'",
+      "test:display": "npm run test -- flashcards.test.js --testNamePattern='Flashcards Display Check'",
+      "test:toggle": "npm run test -- flashcards.test.js --testNamePattern='Flashcards Toggle Meaning Check'"
+    },
+    "devDependencies": {
+      "jest": "^29.7.0",
+      "jest-dev-server": "^11.0.0",
+      "jest-puppeteer": "^11.0.0",
+      "puppeteer": "^24.7.1"
+    }
+  }
